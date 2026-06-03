@@ -661,7 +661,8 @@
 
                                 <h4 class="toyota-title">NEW RAIZE</h4>
 
-                                <ul class="toyota-list">
+                                <ul class="toyota-list"> 
+                                    
                                     <li>
                                         <span>Harga mulai</span>
                                         <strong>Rp 257.033.000</strong>

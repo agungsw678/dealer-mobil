@@ -288,11 +288,11 @@
             </div>
             {{-- Bagian Video Blog --}}
             <div class="card mt-2 shadow-sm p-4" style="background:white; border-radius:10px;">
-                <h3 style="font-weight:700; color:#333;">
-                    <span style="border-left:3px solid #33ccff; padding-left:7px; font-size:18px;">BLOG VIDEO TOYOTA SOLO</span>
+                <h3 style="font-family:'Roboto',sans-serif; font-weight:700; color:#37474F; text-transform:uppercase;">
+                    <span style="border-left:3px solid #33ccff; padding-left:7px; font-size:18px;"> Video Review Mobil Toyota</span>
                 </h3>
-                <p style="font-size:18px; color:#555;">
-                    Video Review yang akan Membantu & Memudahkan Anda dalam Pembelian Mobil Baru Toyota
+                <p style="font-family:'Roboto',sans-serif; font-size:15px; font-weight:400; color:#37474F; line-height:1.3;">
+                    Video Review yang akan Membantu &amp; Memudahkan Anda dalam Pembelian Mobil Baru Toyota
                 </p>
 
                 <div class="row mt-2">

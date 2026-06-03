@@ -141,6 +141,10 @@ Route::get('/mobil/sienta', function () {
     return view('mobil.new-sienta');
 })->name('mobil.sienta');
 
+Route::get('/mobil/agya', function () {
+    return view('mobil.new-agya');
+})->name('mobil.agya');
+
 /*
 |--------------------------------------------------------------------------
 | Admin Routes

@@ -156,7 +156,7 @@
                                     <li><span style="color:#33ccff;">•</span> Harga mulai Rp <b style="color:#1a237e;">299.855.000</b></li>
                                     <li><span style="color:#33ccff;">•</span> Kredit mulai Rp <b style="color:#1a237e;">33 Jutaan</b></li>
                                     <li><span style="color:#33ccff;">•</span> Cicilan mulai Rp <b style="color:#1a237e;">4 Jutaan</b></li>
-                                    <li><span style="color:#33ccff;">•</span> <a href="{{ route('mobil.corollacross') }}" style="color:#333; text-decoration:none;">Lihat Selengkapnya</a></li>
+                                    <li><span style="color:#33ccff;">•</span> <a href="{{ route('mobil.veloz') }}" style="color:#333; text-decoration:none;">Lihat Selengkapnya</a></li>
                                 </ul>
                                 <hr class="mt-auto">
                             </div>
@@ -173,7 +173,7 @@
                                     <li><span style="color:#33ccff;">•</span> Harga mulai Rp <b style="color:#1a237e;">247.791.000</b></li>
                                     <li><span style="color:#33ccff;">•</span> Kredit mulai Rp <b style="color:#1a237e;">30 Jutaan</b></li>
                                     <li><span style="color:#33ccff;">•</span> Cicilan mulai Rp <b style="color:#1a237e;">7 Jutaan</b></li>
-                                    <li><span style="color:#33ccff;">•</span> <a href="{{ route('mobil.corollacross') }}" style="color:#333; text-decoration:none;">Lihat Selengkapnya</a></li>
+                                    <li><span style="color:#33ccff;">•</span> <a href="{{ route('mobil.avanza') }}" style="color:#333; text-decoration:none;">Lihat Selengkapnya</a></li>
                                 </ul>
                                 <hr class="mt-auto">
                             </div>
@@ -190,7 +190,7 @@
                                     <li><span style="color:#33ccff;">•</span> Harga mulai Rp <b style="color:#1a237e;">166.250.000</b></li>
                                     <li><span style="color:#33ccff;">•</span> Kredit mulai Rp <b style="color:#1a237e;">29 Jutaan</b></li>
                                     <li><span style="color:#33ccff;">•</span> Cicilan mulai Rp <b style="color:#1a237e;">3 Jutaan</b></li>
-                                    <li><span style="color:#33ccff;">•</span> <a href="{{ route('mobil.calya') }}" style="color:#333; text-decoration:none;">Lihat Selengkapnya</a></li>
+                                    <li><span style="color:#33ccff;">•</span> <a href="{{ route('mobil.agya') }}" style="color:#333; text-decoration:none;">Lihat Selengkapnya</a></li>
                                 </ul>
                                 <hr class="mt-auto">
                             </div>

@@ -2,9 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Admin\MobilController;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\CarController;
+use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\PromoController;
-use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\VideoReviewController;
+use App\Http\Controllers\Admin\SalesContactController;
+use App\Http\Controllers\Admin\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -152,35 +157,12 @@ Route::get('/mobil/agya', function () {
 */
 
 // Login Admin
-Route::get('/admin/login', function () {
-    if (session('admin_logged_in')) {
-        return redirect('/admin');
-    }
-    return view('admin.login');
-})->name('admin.login');
-
-Route::post('/admin/login', function (Request $request) {
-    $email = $request->input('email');
-    $password = $request->input('password');
-
-    if ($email === 'adm@gmail.com' && $password === 'bismillah') {
-        session(['admin_logged_in' => true]);
-        return redirect('/admin')->with('success', 'Login berhasil!');
-    }
-
-    return back()->with('error', 'Email atau password salah');
-});
+Route::get('/admin/login', [AuthController::class, 'showLogin'])->name('admin.login');
+Route::post('/admin/login', [AuthController::class, 'login']);
 
 // Logout Admin
-Route::get('/admin/logout', function () {
-    session()->forget('admin_logged_in');
-    return redirect('/admin/login')->with('success', 'Berhasil logout');
-})->name('logout');
-
-Route::get('/logout', function () {
-    session()->forget('admin_logged_in');
-    return redirect('/admin/login')->with('success', 'Berhasil logout');
-});
+Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
+Route::get('/logout', [AuthController::class, 'logout']);
 
 // Dashboard & Halaman Admin (protected)
 Route::prefix('admin')->group(function () {
@@ -192,7 +174,66 @@ Route::prefix('admin')->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
-    Route::get('/mobil', [MobilController::class, 'index']);
-    Route::get('/promo', [PromoController::class, 'index']);
-    Route::get('/user', [UserController::class, 'index']);
+    Route::get('/mobil', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.mobil');
+    })->name('admin.mobil');
+
+    Route::get('/harga', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.harga');
+    })->name('admin.harga');
+
+    Route::get('/promo', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.promo');
+    })->name('admin.promo');
+
+    Route::get('/slider', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.slider');
+    })->name('admin.slider');
+
+    Route::get('/video-review', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.video_review');
+    })->name('admin.video.review');
+
+    Route::get('/sales', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.sales');
+    })->name('admin.sales');
+
+    Route::get('/leads', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.leads');
+    })->name('admin.leads');
+
+    Route::get('/artikel', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.artikel');
+    })->name('admin.artikel');
+
+    Route::get('/pengaturan', function () {
+        if (!session('admin_logged_in')) {
+            return redirect('/admin/login');
+        }
+        return view('admin.pengaturan');
+    })->name('admin.pengaturan');
 });

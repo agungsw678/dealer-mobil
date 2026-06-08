@@ -200,12 +200,12 @@
 
                 @php
                 $warna = [
-                ['gambar'=>'Veloz2.png','nama'=>'Warna Super White Two Pu...','caption'=>'Warna Super White Two Putih Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'Veloz3.png','nama'=>'Warna Silver Metallic Toy...','caption'=>'Pilihan Warna Silver Metallic Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'Veloz4.png','nama'=>'Warna Dark Gray Mica Met...',
+                ['gambar'=>'Veloz2.png','caption'=>'Warna Super White Two Putih Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'Veloz3.png','caption'=>'Pilihan Warna Silver Metallic Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'Veloz4.png','caption'=>'Warna Dark Gray Mica Met...',
                 'caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'Veloz5.png','nama'=>'Warna Phantom Brown Toy... ','caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'Veloz6.png','nama'=>'Warna Attitude Black Hitam...','caption'=>'Pilihan Warna Attitude Black Hitam Solo Raya Jawa Tengah'],
+                ['gambar'=>'Veloz5.png','caption'=>'Warna Phantom Brown Toy... ','caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'Veloz6.png','caption'=>'Warna Attitude Black Hitam...','caption'=>'Pilihan Warna Attitude Black Hitam Solo Raya Jawa Tengah'],
                 ];
                 @endphp
 
@@ -242,7 +242,7 @@
                         padding:1px;
                         text-align:center;
                     ">
-                                    {{ $w['nama'] }}
+                                   
                                 </div>
 
                             </div>
@@ -267,12 +267,12 @@
 
                 @php
                 $warna = [
-                ['gambar'=>'WarnaVeloz.png','nama'=>'Warna Super White Two Pu...','caption'=>'Warna Super White Two Putih Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaVeloz1.png','nama'=>'Warna Silver Metallic Toy...','caption'=>'Pilihan Warna Silver Metallic Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaVeloz2.png','nama'=>'Warna Dark Gray Mica Met...',
+                ['gambar'=>'InteriorVeloz1.png','caption'=>'Warna Super White Two Putih Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'InteriorVeloz2.png','caption'=>'Pilihan Warna Silver Metallic Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'InteriorVeloz3.png','caption'=>'Warna Dark Gray Mica Met...',
                 'caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaVeloz3.png','nama'=>'Warna Phantom Brown Toy... ','caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaInnova4.png','nama'=>'Warna Attitude Black Hitam...','caption'=>'Pilihan Warna Attitude Black Hitam Solo Raya Jawa Tengah'],
+                ['gambar'=>'InteriorVeloz4.png','caption'=>'Warna Phantom Brown Toy... ','caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'InteriorVeloz5.png','caption'=>'Warna Attitude Black Hitam...','caption'=>'Pilihan Warna Attitude Black Hitam Solo Raya Jawa Tengah'],
                 ];
                 @endphp
 
@@ -309,7 +309,6 @@
                         padding:1px;
                         text-align:center;
                     ">
-                                    {{ $w['nama'] }}
                                 </div>
 
                             </div>
@@ -334,12 +333,10 @@
 
                 @php
                 $warna = [
-                ['gambar'=>'WarnaVeloz.png','nama'=>'Warna Super White Two Pu...','caption'=>'Warna Super White Two Putih Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaVeloz1.png','nama'=>'Warna Silver Metallic Toy...','caption'=>'Pilihan Warna Silver Metallic Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaVeloz2.png','nama'=>'Warna Dark Gray Mica Met...',
+                ['gambar'=>'WarnaVeloz1.png','nama'=>'Warna Super White Two Pu...','caption'=>'Warna Super White Two Putih Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'WarnaVeloz2.png','nama'=>'Warna Silver Metallic Toy...','caption'=>'Pilihan Warna Silver Metallic Toyota New Veloz Solo Raya Jawa Tengah'],
+                ['gambar'=>'WarnaVeloz3.png','nama'=>'Warna Dark Gray Mica Met...',
                 'caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaVeloz3.png','nama'=>'Warna Phantom Brown Toy... ','caption'=>'Warna Phantom Brown Toyota New Veloz Solo Raya Jawa Tengah'],
-                ['gambar'=>'WarnaInnova4.png','nama'=>'Warna Attitude Black Hitam...','caption'=>'Pilihan Warna Attitude Black Hitam Solo Raya Jawa Tengah'],
                 ];
                 @endphp
 

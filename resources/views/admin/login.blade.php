@@ -92,12 +92,23 @@
                     Masuk untuk mengelola data dealer mobil
                 </p>
 
-                <form method="POST" action="/admin/login">
+                <form method="POST" action="{{ route('admin.login') }}">
                     @csrf
+
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            {{ $errors->first() }}
+                        </div>
+                    @endif
+                    @if(session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
 
                     <div class="mb-3">
                         <label>Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="Masukkan email admin">
+                        <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Masukkan email admin">
                     </div>
 
                     <div class="mb-3">
